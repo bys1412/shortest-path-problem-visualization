@@ -8,6 +8,7 @@ export default defineConfig(({mode}) => {
   const viteAppPassword = process.env.VITE_APP_PASSWORD || env.VITE_APP_PASSWORD;
   const geminiApiKey = process.env.GEMINI_API_KEY || env.GEMINI_API_KEY;
   return {
+    base: '/shortest-path-problem-visualization/',
     plugins: [react()],
     define: {
       'process.env.GEMINI_API_KEY': JSON.stringify(geminiApiKey),
