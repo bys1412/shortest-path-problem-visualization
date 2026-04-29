@@ -24,6 +24,7 @@ import {
 import { Node, Edge, ToolMode, AlgorithmState, DijkstraStep } from './types';
 import { INITIAL_NODES, INITIAL_EDGES } from './initialData';
 import { runDijkstra } from './lib/dijkstra';
+import { PasswordGate } from './components/PasswordGate';
 
 export default function App() {
   // Graph State
@@ -260,6 +261,7 @@ export default function App() {
   };
 
   return (
+    <PasswordGate>
     <div className="flex h-screen w-full flex-col overflow-hidden bg-[#f1f5f9] font-sans text-slate-900 select-none">
       {/* Header */}
       <header className="flex h-14 items-center justify-between border-b border-slate-200 bg-white px-6 shadow-sm z-20">
@@ -648,6 +650,7 @@ export default function App() {
         </div>
       </main>
     </div>
+    </PasswordGate>
   );
 }
 
