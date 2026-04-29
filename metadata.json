@@ -1,0 +1,6 @@
+{
+  "name": "Remix: 运筹学最短路算法交互平台",
+  "description": "一个用于构建无向图并通过Dijkstra算法逐步求解最短路径的交互式前端应用，支持图形编辑、平移缩放、自动/逐步求解及动画演示。",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
